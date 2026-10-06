@@ -11,13 +11,13 @@ using UnityEngine;
         public DialogueNode(string text)
         {
             // 1. set the text of the node and initialize the nexts dictionary
-
+            this.text = text;
         }
 
         public void AddNext(DialogueNode next, string choiceText)
         {
             // 2. add the next node to the nexts dictionary with the choice text as the key
-
+            this.nexts.Add(choiceText , next);
         }
 
         public void Print()
